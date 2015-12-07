@@ -17,11 +17,12 @@
   </filter-mapping>
   <!-- 过滤器配置结束 -->
   
-  <!-- 404配置 -->
+  <!-- 404配置开始 -->
   <error-page>
   	<error-code>404</error-code>
   	<location>/error.jsp</location>
   </error-page>
+  <!-- 404配置结束 -->
   
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
