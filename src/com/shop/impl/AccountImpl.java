@@ -23,7 +23,7 @@ public class AccountImpl implements IAccount {
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
-		Account tmpAccount = null;
+		Account tmpAccount = new Account();
 		try {
 			conn = DBHelper.getConnection();
 			String sql = "select * from account where username = ? and password = ?;"; // SQL查询
@@ -32,12 +32,12 @@ public class AccountImpl implements IAccount {
 			stmt.setString(2, account.getPassword());
 			rs = stmt.executeQuery();
 			if (rs.next()) {
-				tmpAccount.setId(account.getId());
-				tmpAccount.setUsername(account.getUsername());
-				tmpAccount.setPassword(account.getPassword());
-				tmpAccount.setEmail(account.getEmail());
-				tmpAccount.setPhone(account.getPhone());
-				tmpAccount.setSex(account.getSex());
+				tmpAccount.setId(rs.getInt("id"));
+				tmpAccount.setUsername(rs.getString("username"));
+				tmpAccount.setPassword(rs.getString("password"));
+				tmpAccount.setEmail(rs.getString("email"));
+				tmpAccount.setPhone(rs.getString("phone"));
+				tmpAccount.setSex(rs.getShort("sex"));
 				return tmpAccount;
 			} else {
 				return null;

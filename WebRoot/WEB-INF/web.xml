@@ -17,6 +17,20 @@
   </filter-mapping>
   <!-- 过滤器配置结束 -->
   
+  <!-- Servlet配置开始 -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AccountServlet</servlet-name>
+    <servlet-class>com.shop.servlet.AccountServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AccountServlet</servlet-name>
+    <url-pattern>/servlet/AccountServlet</url-pattern>
+  </servlet-mapping>
+  <!-- Servlet配置结束 -->
+  
   <!-- 404配置开始 -->
   <error-page>
   	<error-code>404</error-code>

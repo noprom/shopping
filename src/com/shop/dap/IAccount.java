@@ -10,4 +10,5 @@ import com.shop.pojo.Account;
 public interface IAccount {
 	
 	public Account queryAccount(Account account);
+	
 }
