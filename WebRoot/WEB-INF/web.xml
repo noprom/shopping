@@ -15,6 +15,16 @@
   	<filter-name>EncodingFilter</filter-name>
   	<url-pattern>/*</url-pattern>
   </filter-mapping>
+  
+  <filter>
+  	<filter-name>AdminFilter</filter-name>
+  	<filter-class>com.shop.filter.AdminFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>AdminFilter</filter-name>
+  	<url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  
   <!-- 过滤器配置结束 -->
   
   <!-- Servlet配置开始 -->

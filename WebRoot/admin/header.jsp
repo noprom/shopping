@@ -23,6 +23,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    欢迎使用商城管理系统
+    ${sessionScope.account.username}, 欢迎使用商城管理系统
   </body>
 </html>
