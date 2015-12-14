@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>商城管理系统</title>
+    <title>My JSP 'index.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,9 +23,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <ul>
-    	<li><a href="admin/saveCategory.jsp" target="right">添加商品</a> </li>
-    	<li>查询类别</li>
-    </ul>
+    添加商品类别
   </body>
 </html>

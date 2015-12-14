@@ -21,8 +21,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
 
   </head>
+  <frameset rows="100,*" frameborder="yes" >
+	<frame src="admin/header.jsp" />
+	<frameset rows="150,*" frameborder="yes">
+		<frame src="admin/left.jsp" />
+		<frame src="admin/main.jsp"  name="right"/>
+	</frameset>
+  </frameset>
   
-  <body>
-    欢迎使用
-  </body>
 </html>

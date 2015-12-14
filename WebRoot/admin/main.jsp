@@ -23,6 +23,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    系统配置信息｜日志｜报表
+    系统配置信息｜日志｜报表a
   </body>
 </html>
